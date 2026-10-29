@@ -1,0 +1,45 @@
+# Dependencias
+node_modules/
+
+# Expo / Metro
+.expo/
+.expo-shared/
+dist/
+web-build/
+expo-env.d.ts
+.metro-health-check*
+
+# Carpetas nativas generadas por `expo prebuild` (EAS las regenera en la nube)
+/android
+/ios
+
+# Binarios de build
+*.apk
+*.aab
+*.ipa
+
+# Credenciales y firmas (NUNCA subir)
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.mobileprovision
+credentials.json
+
+# Variables de entorno
+.env
+.env.*
+
+# Logs y basura del sistema
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.orig.*
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+
+/APK/
+/tools/
+/diagnostico/

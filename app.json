@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "Brainloop",
+    "slug": "brainloop",
+    "version": "1.4.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "backgroundColor": "#07080D",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#07080D"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.brainloop.ai"
+    },
+    "android": {
+      "package": "app.brainloop.ai",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "monochromeImage": "./assets/adaptive-icon-monochrome.png",
+        "backgroundColor": "#07080D"
+      },
+      "allowBackup": false,
+      "softwareKeyboardLayoutMode": "resize",
+      "permissions": [
+        "INTERNET",
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT",
+        "DETECT_SCREEN_CAPTURE"
+      ],
+      "blockedPermissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Brainloop usa Face ID para desbloquear tu terminal."
+        }
+      ],
+      "./plugins/with-no-deep-links"
+    ]
+  }
+}

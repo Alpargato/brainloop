@@ -1,0 +1,35 @@
+# EAS usa este archivo en lugar de .gitignore al subir el proyecto a la nube.
+# Mismas reglas que .gitignore + el kit de marca (no hace falta para compilar).
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+expo-env.d.ts
+.metro-health-check*
+/android
+/ios
+*.apk
+*.aab
+*.ipa
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.mobileprovision
+credentials.json
+.env
+.env.*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.orig.*
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+/branding
+/APK
+/scripts
+/tools
+/diagnostico
